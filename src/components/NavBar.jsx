@@ -43,7 +43,7 @@ const NavBar = () => {
       <div className="flex justify-between items-center">
         <div className="mx-7">
           <h4 className="text-4xl font-signature font-bold">
-            ti<span className="text-[#0a63c3]">imiha</span>ck
+            ti<span className="text-[#0a63c3]">miha</span>ck
           </h4>
         </div>
         <div
