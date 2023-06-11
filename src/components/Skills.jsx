@@ -23,7 +23,7 @@ import {
   SiGithub,
 } from "react-icons/si";
 
-const Experience = () => {
+const Skills = () => {
   const languages = [
     { icon: <AiFillHtml5 size={60} color="orange" />, name: "HTML5" },
     { icon: <DiCss3 size={60} color="navyblue" />, name: "CSS" },
@@ -91,16 +91,16 @@ const Experience = () => {
           <div className="flex-1 mt-8 md:mt-0">
             <h1 className="text-gray-200 text-2xl">Frameworks/Libraries</h1>{" "}
             <div className="flex flex-wrap items-center justify-center my-4 px-7 gap-12">
-              {frameworks.map((language, index) => (
+              {frameworks.map((framework, index) => (
                 <div
                   key={index}
                   className="border-2 border-[#0a63c3] relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-3 rounded-xl"
                 >
                   <div className="w-32 h-32 flex items-center justify-center rounded-full">
-                    {language.icon}
+                    {framework.icon}
                   </div>
                   <p className="text-white mt-3 text-lg text-center">
-                    {language.name}
+                    {framework.name}
                   </p>
                 </div>
               ))}
@@ -109,16 +109,16 @@ const Experience = () => {
           <div className="flex-1 mt-8 md:mt-0">
             <h1 className="text-gray-200 text-2xl">Tools</h1>
             <div className="flex flex-wrap items-center justify-center my-4 px-7 gap-12">
-              {tools.map((language, index) => (
+              {tools.map((tool, index) => (
                 <div
                   key={index}
                   className="border-2 border-[#0a63c3] relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-3 rounded-xl"
                 >
                   <div className="w-32 h-32 flex items-center justify-center rounded-full">
-                    {language.icon}
+                    {tool.icon}
                   </div>
                   <p className="text-white mt-3 text-lg text-center">
-                    {language.name}
+                    {tool.name}
                   </p>
                 </div>
               ))}
@@ -130,4 +130,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Skills;

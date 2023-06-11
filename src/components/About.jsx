@@ -32,13 +32,14 @@ const About = () => {
           <div className="p-2">
             <div className="my-3 w-11/12 mx-auto">
               <p className="text-justify leading-10">
-                I am an expert in Software Development and a deep understanding
-                of various technologies. I possess strong skills in programming
-                languages such as Python (Django, Flask, FastAPI), JavaScript
-                (ReactJS), and PHP, along with proficiency in working with
-                databases like Postgres, MySQL, and MongoDB. Additionally, I
-                specialize in Artificial Intelligence, particularly in Machine
-                Learning, Deep Learning (computer vision).
+                I am an expert in Software Development and have a deep
+                understanding of various technologies. I possess strong skills
+                in programming languages such as Python (Django, Flask,
+                FastAPI), JavaScript (ReactJS), and PHP, along with proficiency
+                in working with databases like Postgres, MySQL, and MongoDB.
+                Additionally, I specialize in Artificial Intelligence,
+                particularly in Machine Learning, Deep Learning (computer
+                vision).
               </p>
               <div className="flex justify-center md:justify-start mt-10 items-center gap-7">
                 {info.map(({ id, count, desc }) => (
