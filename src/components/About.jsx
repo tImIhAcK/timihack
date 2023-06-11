@@ -27,7 +27,9 @@ const About = () => {
           About{" "}
           <span className="text-[#0a63c3] border-b-2 border-b-white">Me</span>
         </h3>
-        <p className="text-gray-600 my-3 text-lg">My Introduction</p>
+        <p className="text-gray-600 my-3 text-lg font-signature">
+          My Introduction
+        </p>
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
           <div className="p-2">
             <div className="my-3 w-11/12 mx-auto">
