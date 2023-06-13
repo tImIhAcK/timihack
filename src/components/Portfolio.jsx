@@ -47,20 +47,17 @@ const Portfolio = () => {
         </p>
       </div>
       <div className="flex max-w-6xl px-5 mx-auto items-center relative">
-        <div className="lg:w-2/3 w-full">
+        <div className="w-full">
           <Swiper
-            slidePerView={1.2} // Set to 1 to show one slide at a time
-            spaceBetween={20}
-            breakpoints={{
-              780: {
-                slidesPerView: 2, // Show two slides side by side on screens larger than 780px
-              },
-            }}
-            modules={[EffectFade, Pagination, Autoplay]}
-            effect="fade"
-            pagination={{ clickable: true }}
+            spaceBetween={50}
+            slidesPerView={2}
+            speed={500}
             loop={true}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            touchRatio={1.5}
+            modules={[EffectFade, Pagination, Autoplay]}
+            navigation={true}
+            pagination={{ clickable: true }}
+            autoplay={true}
           >
             {portfolios.map((portfolio) => (
               <SwiperSlide key={portfolio.id}>
