@@ -1,8 +1,22 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { FaWhatsapp } from "react-icons/fa";
+import { HiOutlineMail, HiLocationMarker } from "react-icons/hi";
 
 const Contact = () => {
-  const inputStyles = `mb-5 rounded-md w-full bg-primary-300 px-5 py-3 text-gray-900`;
+  const inputStyles = `mb-5 rounded-md w-full bg-primary-300 px-5 py-3 bg-gray-700`;
+
+  const contact_icons = [
+    {
+      icon: <HiOutlineMail size={25} color="" />,
+      text: "adeniranjohn2016@gmail.com",
+    },
+    { icon: <FaWhatsapp size={25} color="" />, text: "+234 805 161 0576" },
+    {
+      icon: <HiLocationMarker size={25} color="" />,
+      text: "Akure, Nigeria",
+    },
+  ];
 
   const {
     register,
@@ -63,7 +77,7 @@ const Contact = () => {
 
             <textarea
               className={inputStyles}
-              rows={4}
+              rows={10}
               cols={50}
               placeholder="MESSAGE"
               {...register("message", { required: true, maxLength: 2000 })}
@@ -80,10 +94,19 @@ const Contact = () => {
               type="submit"
               className="btn-primary justify-center items-center"
             >
-              Submit
+              Send Message
             </button>
           </form>
-          <div></div>
+          <div className="flex flex-col gap-7">
+            {contact_icons.map((contact, index) => (
+              <div key={index} className="flex gap-4 w-fit items-center">
+                <div className="min-w-[4rem] text-2xl min-h-[4rem] flex items-center justify-center text-white bg-[#0a63c3] rounded-full">
+                  {contact.icon}
+                </div>
+                <p className="text-lg">{contact.text}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

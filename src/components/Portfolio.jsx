@@ -50,8 +50,9 @@ const Portfolio = () => {
         <div className="w-full">
           <Swiper
             spaceBetween={50}
-            slidesPerView={2}
+            slidesPerView={1}
             speed={500}
+            breakpoints={{ 768: { slidesPerView: 2 } }}
             loop={true}
             touchRatio={1.5}
             modules={[EffectFade, Pagination, Autoplay]}

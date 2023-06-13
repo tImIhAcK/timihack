@@ -44,3 +44,11 @@
 .aboutImg::after {
     @apply content-[''] w-full left-0 top-0 rounded-xl rotate-12 h-full absolute bg-gray-500 z-[-999];
 }
+
+::placeholder{
+    @apply text-lg;
+}
+
+::selection{
+    @apply bg-[#0a63c3]
+}

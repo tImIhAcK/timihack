@@ -48,7 +48,7 @@ const Home = () => {
           <h4 className="md:text-2xl text-lg md:leading-normal leading-5 my-4 font-bold text-gray-500">
             Software Developer
           </h4>
-          <span ref={el} className="pt-4 text-3xl text-white"></span>
+          <span ref={el} className="pt-4 text-2xl text-white"></span>
           <button className="group mt-8 btn-primary">
             Porfolio
             <span className="group-hover:rotate-90 duration-300">
