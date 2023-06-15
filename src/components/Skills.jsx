@@ -26,7 +26,7 @@ import {
 const Skills = () => {
   const languages = [
     { icon: <AiFillHtml5 size={60} color="orange" />, name: "HTML5" },
-    { icon: <DiCss3 size={60} color="navyblue" />, name: "CSS" },
+    { icon: <DiCss3 size={60} color="navy" />, name: "CSS" },
     { icon: <SiPython size={60} color="blue" />, name: "Python" },
     { icon: <SiPhp size={60} color="purple" />, name: "PHP" },
     { icon: <SiJavascript size={60} color="yellow" />, name: "JavaScript" },
