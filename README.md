@@ -6,9 +6,9 @@
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working at EduJobsNG
+- 🔭 I’m currently working at EduJobsNG as a Backend Engineer
 - 🌱 I’m currently learning to be a Full-Stack Engineer
-- 👯 I’m looking to collaborate on Open Source project
+- 👯 I have collaborated on some many other project not in my repo
 - 💬 Ask me about ...
 - 📫 How to reach me: WhatsApp (+2348051610576), e-mail (adeniranjohn2016@gmail.com)
-- ⚡ Fun fact: ...
+- ⚡ Fun fact: Am a football fan (Arsenal), Love watching movies
