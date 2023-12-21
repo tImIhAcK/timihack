@@ -4,9 +4,9 @@
 **tImIhAcK/timihack** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 -->
 
-Here are some ideas to get you started:
+My Name is Adeniran John... Here are some facts about me
 
-- 🔭 I’m currently working as a Backend Engineer
+- 🔭 I’m currently working as a Backend Engineer and AI Engineer
 - 🌱 I’m currently learning to be a Full-Stack Engineer
 - 👯 I have collaborated on some many other project not in my repo
 - 💬 Ask me about anything Tech
