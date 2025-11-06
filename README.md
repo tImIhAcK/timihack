@@ -50,7 +50,7 @@ I'm **Adeniran John**, a dedicated **Backend Engineer** and **AI Engineer** with
   <a href="https://www.linkedin.com/in/timihack" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="https://x.com/timihack" target="_blank">
+  <a href="https://x.com/timihack_" target="_blank">
     <img src="https://img.shields.io/badge/X%20(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" alt="X (Twitter)"/>
   </a>
 </p>

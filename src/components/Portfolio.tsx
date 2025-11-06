@@ -228,7 +228,7 @@ const Portfolio = () => {
             </p>
             <p className="text-gray-400">November 2025</p>
             <p className="text-gray-300 mt-2">
-              • Contributed to FastAPI, one of the most
+              • Contributing to FastAPI, one of the most
               popular Python web frameworks.
               <br />
               • Enhanced developer experience by implementing clear, actionable
@@ -372,7 +372,7 @@ const Portfolio = () => {
             </p>
             <p className="text-gray-300">
               LinkedIn:{" "}
-              <span className="text-cyan-400">linkedin.com/in/timihack</span>
+              <span className="text-cyan-400">linkedin.com/in/timihack_</span>
             </p>
             <p className="text-gray-300">
               Twitter: <span className="text-cyan-400">@timihack</span>
