@@ -9,7 +9,7 @@ I'm **Adeniran John**, a dedicated **Backend Engineer** and **AI Engineer** with
 - 🌱 Committed to continuous learning and professional growth  
 - 👯 Experienced in cross-functional collaboration and team-based development  
 - 💬 Open to discussions on backend architecture, APIs, and machine learning  
-- 📫 Reach me at **adeniranjohn2016@gmail.com** or on [WhatsApp](https://wa.me/2348051610576)  
+- 📫 Reach me at **timihack.it@gmail.com** or on [WhatsApp](https://wa.me/2348051610576)  
 - ⚡ Outside of work, I enjoy football (Arsenal fan) and great movies  
 
 ---
