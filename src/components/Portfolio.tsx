@@ -4,13 +4,13 @@ import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 
 const Portfolio = () => {
-  const canvasRef = useRef(null);
-  const sceneRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const sceneRef = useRef<THREE.Scene>(null);
   const [activeSection, setActiveSection] = useState("home");
   const [time, setTime] = useState("");
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const terminalRef = useRef(null);
-  const contentRef = useRef(null);
+  const terminalRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   // Update time
@@ -34,7 +34,9 @@ const Portfolio = () => {
     contentRef.current.style.animation = "none";
 
     setTimeout(() => {
-      contentRef.current.style.animation = "";
+      if (contentRef.current) {
+        contentRef.current.style.animation = "";
+      }
       setIsTransitioning(false);
     }, 10);
   }, [activeSection]);
@@ -62,7 +64,14 @@ const Portfolio = () => {
     renderer.setPixelRatio(window.devicePixelRatio);
 
     // Create floating cubes with rotation data
-    const cubes = [];
+   interface CubeData {
+      mesh: THREE.Mesh;
+      rotationSpeed: { x: number; y: number };
+      floatSpeed: number;
+      floatPhase: number;
+      baseY: number;
+    }
+    const cubes: CubeData[] = [];
     const cubeGeometry = new THREE.BoxGeometry(0.8, 0.8, 0.8);
     const colors = ["#00ff88", "#ff006e", "#00d9ff", "#ffd60a", "#ff6b9d"];
 
@@ -131,7 +140,7 @@ const Portfolio = () => {
     scene.add(ambientLight);
 
     // Mouse tracking
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       setMousePos({
         x: (e.clientX / width) * 2 - 1,
         y: -(e.clientY / height) * 2 + 1,
@@ -199,7 +208,7 @@ const Portfolio = () => {
         <div className="space-y-4">
           <p className="text-green-400 font-mono">Welcome to my portfolio</p>
           <p className="text-gray-300 font-mono text-sm leading-relaxed mt-2">
-            I'm a developer passionate about creating intelligent, efficient,
+            I&apos;m a developer passionate about creating intelligent, efficient,
             and impactful digital experiences with modern technologies.
           </p>
           <div className="text-cyan-400 font-mono text-sm mt-3 space-y-1">
@@ -230,8 +239,6 @@ const Portfolio = () => {
               <br />
               • Developed comprehensive test suite with 97% coverage for all
               error scenarios.
-              {/* <br />• Merged PR #14281 - impacting thousands of developers
-              globally by reducing debugging time. */}
             </p>
             <p className="text-gray-400 mt-1">
               Technologies Used: Python, FastAPI, pytest, Type Hints,
@@ -342,7 +349,7 @@ const Portfolio = () => {
             real-time systems.
           </p>
           <p>
-            When I’m not coding, you’ll find me exploring new technologies,
+            When I&apos;m not coding, you&apos;ll find me exploring new technologies,
             experimenting with AI projects, or tackling data-driven challenges.
           </p>
           <p className="text-green-400 mt-4">Location: Nigeria</p>
@@ -377,9 +384,9 @@ const Portfolio = () => {
     },
   };
 
-  const currentSection = sections[activeSection];
+  const currentSection = sections[activeSection as keyof typeof sections];
 
-  const handleSectionClick = (section) => {
+  const handleSectionClick = (section: string) => {
     setActiveSection(section);
   };
 
