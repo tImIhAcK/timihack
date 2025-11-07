@@ -1,5 +1,6 @@
 "use client";
 
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 
@@ -64,7 +65,7 @@ const Portfolio = () => {
     renderer.setPixelRatio(window.devicePixelRatio);
 
     // Create floating cubes with rotation data
-   interface CubeData {
+    interface CubeData {
       mesh: THREE.Mesh;
       rotationSpeed: { x: number; y: number };
       floatSpeed: number;
@@ -208,37 +209,36 @@ const Portfolio = () => {
         <div className="space-y-4">
           <p className="text-green-400 font-mono">Welcome to my portfolio</p>
           <p className="text-gray-300 font-mono text-sm leading-relaxed mt-2">
-            I&apos;m a developer passionate about creating intelligent, efficient,
-            and impactful digital experiences with modern technologies.
+            I&apos;m a developer passionate about creating intelligent,
+            efficient, and impactful digital experiences with modern
+            technologies.
           </p>
           <div className="text-cyan-400 font-mono text-sm mt-3 space-y-1">
-            <p>{"> Skills: Python, Django, FastAPI, AI/ML"}</p>
+            <p>{"> Skills: Python, FastAPI, Django, React, AI/ML"}</p>
             <p>{"> Experience: 4+ years"}</p>
           </div>
         </div>
       ),
     },
+
     experience: {
       title: "$ cat experience.txt",
       content: (
-        <div className="space-y-4 text-sm font-mono">
+        <div className="space-y-6 text-sm font-mono">
+          {/* Open Source Contributor */}
           <div className="border-l-2 border-purple-400 pl-4">
             <p className="text-purple-400 font-bold">
               Open Source Contributor @ FastAPI
             </p>
-            <p className="text-gray-400">November 2025</p>
+            <p className="text-gray-400">November 2025 - Present</p>
             <p className="text-gray-300 mt-2">
-              • Contributing to FastAPI, one of the most
-              popular Python web frameworks.
+              • Contributing to FastAPI, one of the most popular Python web
+              frameworks.
               <br />
-              • Enhanced developer experience by implementing clear, actionable
-              error messages for dependency injection misuse.
-              <br />
-              • Added validation logic in Depends class to catch common mistakes
-              early with helpful guidance.
-              <br />
-              • Developed comprehensive test suite with 97% coverage for all
-              error scenarios.
+              • Enhanced developer experience by adding clear, actionable error
+              messages for dependency injection misuse.
+              <br />• Implemented validation logic in Depends class and built a
+              97% coverage test suite for all error cases.
             </p>
             <p className="text-gray-400 mt-1">
               Technologies Used: Python, FastAPI, pytest, Type Hints,
@@ -246,59 +246,73 @@ const Portfolio = () => {
             </p>
           </div>
 
+          {/* Senior Full Stack Developer */}
+          <div className="border-l-2 border-yellow-400 pl-4">
+            <p className="text-yellow-400 font-bold">
+              Backend Developer @ AI-Powered Video & Education Platform
+            </p>
+            <p className="text-gray-400">Sept, 2025</p>
+            <p className="text-gray-300 mt-2">
+              • Built a full-stack AI platform integrating video processing, PDF
+              management, and semantic search.
+              <br />
+              • Designed scalable pipelines using FastAPI, Redis, Celery, and
+              pgvector, cutting processing time by 70%.
+              <br />
+              • Integrated OpenAI GPT and Sentence Transformers for
+              conversational AI and intelligent recommendations.
+              <br />• Architected async-first backend with microservice design,
+              caching, and CI/CD setup.
+            </p>
+            <p className="text-gray-400 mt-1">
+              Technologies Used: FastAPI, React, SQLModel, PostgreSQL, pgvector,
+              Redis, Celery, OpenAI GPT, OpenAI Whisper, Sentence Tranformer,
+              Docker, Nginx, Git, CI/CD
+            </p>
+          </div>
+
+          {/* DVCSSS */}
           <div className="border-l-2 border-green-400 pl-4">
             <p className="text-green-400 font-bold">
               Backend Developer @ DVCSSS
             </p>
             <p className="text-gray-400">April 2025 - Sept 2025</p>
             <p className="text-gray-300 mt-2">
-              • Modernized and stabilized existing PHP systems by fixing
-              critical bugs and optimizing legacy code.
-              <br />
-              • Integrated an AI-driven assignment generation module to automate
-              academic content creation.
-              <br />
-              • Designed and built a scalable online CBT (Computer-Based
-              Testing) platform using FastAPI and React for WAEC, NECO, and JAMB
-              practice.
-              <br />• Containerized services with Docker, configured
-              development/staging environments, and used Git for version
-              control.
+              • Built an AI-assisted CBT platform (FastAPI + React) and
+              modernized existing PHP systems.
+              <br />• Automated academic content generation and containerized
+              services with Docker and Git.
             </p>
             <p className="text-gray-400 mt-1">
               Technologies Used: PHP, Python, FastAPI, React, TailwindCSS,
-              PostgreSQL, Docker, Git, Linux, REST APIs, Alembic, Redis, Celery
+              PostgreSQL, Docker, Git, Linux, REST APIs, Redis, Celery
             </p>
           </div>
 
+          {/* Davak Consult */}
           <div className="border-l-2 border-cyan-400 pl-4">
             <p className="text-cyan-400 font-bold">
               Backend Developer (Contract) @ Davak Consult
             </p>
             <p className="text-gray-400">June 2025</p>
             <p className="text-gray-300 mt-2">
-              • Designed and implemented authentication and student dashboard
-              with assignment tracking, submission tools, and messaging system.
+              • Developed an education and career platform with authentication,
+              dashboards, and analytics.
               <br />
               • Built educator tools for class management, communication, and
-              analytics dashboards.
-              <br />
-              • Developed job and internship posting features for industry
-              partners with basic analytics.
-              <br />
-              • Created collaboration tools and conducted usability testing with
-              stakeholders.
-              <br />• Implemented role-based access and admin panel for managing
-              students, educators, and industry partners.
+              job/internship tracking.
+              <br />• Implemented role-based access control and conducted
+              usability testing with stakeholders.
             </p>
             <p className="text-gray-400 mt-1">
-              Technologies Used: Python, FastAPI, PostgreSQL, Docker, Git, Git Actions,
-              Linux, REST APIs, Alembic, Redis, Celery
+              Technologies Used: Python, FastAPI, PostgreSQL, Docker, Git,
+              GitHub Actions, Linux, REST APIs, Alembic, Redis, Celery, CI/CD
             </p>
           </div>
         </div>
       ),
     },
+
     skills: {
       title: "$ ls -la skills/",
       content: (
@@ -312,7 +326,7 @@ const Portfolio = () => {
           <div>
             <p className="text-red-400 mb-1">Backend:</p>
             <p className="text-gray-300 ml-4 leading-relaxed">
-              Django • FastAPI • Flask • Laravel
+              FastAPI • Django • Flask • Laravel
             </p>
           </div>
           <div>
@@ -324,33 +338,35 @@ const Portfolio = () => {
           <div>
             <p className="text-cyan-400 mb-1">AI & Machine Learning:</p>
             <p className="text-gray-300 ml-4 leading-relaxed">
-              TensorFlow • PyTorch
+              TensorFlow • PyTorch • OpenAI GPT • Sentence Transformers •
+              Whisper
             </p>
           </div>
           <div>
             <p className="text-yellow-400 mb-1">Tools & DevOps:</p>
             <p className="text-gray-300 ml-4 leading-relaxed">
-              Git • CI/CD • PostgreSQL • MySQL • MongoDB • Docker • AWS • Linux
+              Git • CI/CD • PostgreSQL • MySQL • Docker • Redis • Linux • AWS
             </p>
           </div>
         </div>
       ),
     },
+
     about: {
       title: "$ whoami",
       content: (
         <div className="space-y-3 text-sm font-mono text-gray-300 leading-relaxed">
           <p>
-            A curious developer obsessed with creating intelligent, efficient,
-            and impactful digital experiences.
+            A curious developer obsessed with building intelligent, scalable,
+            and efficient solutions.
           </p>
           <p>
-            I specialize in Python, Django, FastAPI, AI/ML applications, and
-            real-time systems.
+            I specialize in Python, FastAPI, Django, and AI/ML integrations —
+            transforming data and automation into meaningful products.
           </p>
           <p>
-            When I&apos;m not coding, you&apos;ll find me exploring new technologies,
-            experimenting with AI projects, or tackling data-driven challenges.
+            When I&apos;m not coding, I&apos;m exploring new frameworks,
+            contributing to open source, or crafting innovative AI projects.
           </p>
           <p className="text-green-400 mt-4">Location: Nigeria</p>
           <p className="text-green-400">Status: Open to opportunities</p>
@@ -358,26 +374,77 @@ const Portfolio = () => {
       ),
     },
     contact: {
-      title: "$ contact --info",
+      title: "$ connect.sh",
       content: (
         <div className="space-y-3 text-sm font-mono">
           <p className="text-green-400">Get in touch:</p>
+
           <div className="space-y-2 ml-4">
-            <p className="text-gray-300">
-              Email:{" "}
-              <span className="text-cyan-400">timihack.it@gmail.com</span>
+            {/* Email */}
+            <p className="text-gray-300 flex items-center space-x-2">
+              <Mail className="w-4 h-4 text-cyan-400" />
+              <span>
+                Email:{" "}
+                <a
+                  href="mailto:timihack.it@gmail.com"
+                  className="text-cyan-400 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  timihack.it@gmail.com
+                </a>
+              </span>
             </p>
-            <p className="text-gray-300">
-              GitHub: <span className="text-cyan-400">github.com/tImIhAcK</span>
+
+            {/* GitHub */}
+            <p className="text-gray-300 flex items-center space-x-2">
+              <Github className="w-4 h-4 text-cyan-400" />
+              <span>
+                GitHub:{" "}
+                <a
+                  href="https://github.com/tImIhAcK"
+                  className="text-cyan-400 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github.com/tImIhAcK
+                </a>
+              </span>
             </p>
-            <p className="text-gray-300">
-              LinkedIn:{" "}
-              <span className="text-cyan-400">linkedin.com/in/timihack_</span>
+
+            {/* LinkedIn */}
+            <p className="text-gray-300 flex items-center space-x-2">
+              <Linkedin className="w-4 h-4 text-cyan-400" />
+              <span>
+                LinkedIn:{" "}
+                <a
+                  href="https://linkedin.com/in/timihack"
+                  className="text-cyan-400 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  linkedin.com/in/timihack
+                </a>
+              </span>
             </p>
-            <p className="text-gray-300">
-              Twitter: <span className="text-cyan-400">@timihack</span>
+
+            {/* Twitter */}
+            <p className="text-gray-300 flex items-center space-x-2">
+              <Twitter className="w-4 h-4 text-cyan-400" />
+              <span>
+                Twitter:{" "}
+                <a
+                  href="https://twitter.com/timihack_"
+                  className="text-cyan-400 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @timihack_
+                </a>
+              </span>
             </p>
           </div>
+
           <p className="text-green-400 mt-4">Looking forward to connecting!</p>
         </div>
       ),
