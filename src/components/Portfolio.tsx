@@ -207,7 +207,7 @@ const Portfolio = () => {
       title: "$ welcome",
       content: (
         <div className="space-y-4">
-          <p className="text-green-400 font-mono">Welcome to my portfolio</p>
+          <p className="text-green-400 font-mono">Welcome to my portfolio 👋</p>
           <p className="text-gray-300 font-mono text-sm leading-relaxed mt-2">
             I&apos;m a developer passionate about creating intelligent,
             efficient, and impactful digital experiences with modern
